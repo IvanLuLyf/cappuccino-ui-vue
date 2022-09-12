@@ -1,0 +1,24 @@
+{
+  "name": "cappuccino-ui-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.21"
+  },
+  "keywords": [],
+  "author": "IvanLu",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.79.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-vue": "^6.0.0"
+  }
+}
