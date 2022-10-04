@@ -16,11 +16,10 @@ export default {
     label: {type: String},
     disabled: {type: Boolean},
   },
-  methods: {
-    _onUpdate(evt) {
-      this.$emit("update:checked", evt.target.checked);
-    }
-  }
+  setup(props, {emit}) {
+    const _onUpdate = (evt) => emit("update:checked", evt.target.checked);
+    return {_onUpdate};
+  },
 }
 </script>
 
